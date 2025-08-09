@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <style>
+            /* General body styling */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+
+            /* Section Separator */
+            .section-divider {
+                border: 0;
+                height: 2px;
+                background-color: #e0e0e0;
+                margin: 2rem auto;
+                max-width: 90%;
+            }
+
+            /* --- Hero Section Styles --- */
+            .hero-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .hero-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 4px solid #fff;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                margin-bottom: 2rem;
+            }
+
+            .contact-details h1 {
+                font-size: 2.5rem;
+                margin: 0.5rem 0;
+                color: #2c3e50;
+            }
+
+            .contact-details p {
+                font-size: 1.2rem;
+                color: #7f8c8d;
+                margin: 0.5rem 0;
+            }
+
+            .contact-links {
+                margin-top: 1rem;
+            }
+
+            .contact-links a {
+                text-decoration: none;
+                color: #3498db;
+                font-weight: bold;
+                margin: 0 1rem;
+                transition: color 0.3s ease;
+            }
+
+            .contact-links a:hover {
+                color: #2980b9;
+            }
+
+            /* --- About Section Styles --- */
+            .about-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .about-content {
+                background-color: #fff;
+                padding: 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+                width: 100%; /* Ensure content takes full width of parent */
+            }
+
+            .about-content h2 {
+                font-size: 2.2rem;
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+            }
+
+            .about-content p {
+                font-size: 1.1rem;
+                color: #555;
+                margin: 0;
+                text-align: left;
+                /* Removed max-width: 600px; for consistency */
+            }
+
+            /* --- Index & Resume Styles --- */
+            .index-resume-section {
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                margin: 0 auto;
+            }
+
+            .content-container {
+                display: flex;
+                gap: 2rem;
+                background-color: #fff;
+                padding: 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            .index-column,
+            .resume-column {
+                flex: 1;
+            }
+
+            .index-column h2,
+            .resume-column h2 {
+                font-size: 1.8rem;
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid #ecf0f1;
+                padding-bottom: 0.5rem;
+                text-align: center; /* Center the heading */
+            }
+
+            .index-column ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .index-column li {
+                margin-bottom: 1rem;
+            }
+
+            .index-column a {
+                text-decoration: none;
+                color: #3498db;
+                font-size: 1.1rem;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+            .index-column a:hover {
+                color: #2980b9;
+            }
+
+            .resume-column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Center the button */
+            }
+
+            .google-drive-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px; /* Square button size */
+                height: 80px; /* Square button size */
+                background-color: #3498db; /* A blue color similar to Google Drive's */
+                border-radius: 8px;
+                transition:
+                    background-color 0.3s ease,
+                    transform 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                text-decoration: none; /* Remove underline */
+                color: #fff; /* SVG color inherited */
+                margin-top: 1.5rem; /* Add some space below the heading */
+            }
+
+            .google-drive-button:hover {
+                background-color: #2980b9; /* Darker blue on hover */
+                transform: translateY(-5px); /* Slight lift on hover */
+            }
+
+            .google-drive-button svg {
+                width: 48px;
+                height: 48px;
+            }
+
+            /* --- Tools Section Styles --- */
+            .tools-section {
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                margin: 0 auto;
+            }
+
+            .tools-container {
+                background-color: #fff;
+                padding: 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            .tools-container h2 {
+                font-size: 2.2rem;
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .tab-buttons {
+                display: flex;
+                justify-content: center;
+                border-bottom: 2px solid #ecf0f1;
+                margin-bottom: 1.5rem;
+            }
+
+            .tab-button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #7f8c8d;
+                transition:
+                    color 0.3s ease,
+                    border-bottom 0.3s ease;
+            }
+
+            .tab-button:hover {
+                color: #34495e;
+            }
+
+            .tab-button.active {
+                color: #3498db;
+                border-bottom: 3px solid #3498db;
+            }
+
+            .tab-content {
+                display: none;
+                padding: 1rem 0;
+            }
+
+            .tab-content.active {
+                display: block;
+            }
+
+            .tool-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .tool-list li {
+                background-color: #ecf0f1;
+                color: #2c3e50;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                font-weight: bold;
+            }
+
+            /* --- Experience Cards Styles --- */
+            .experience-section {
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                margin: 0 auto;
+            }
+
+            .experience-section h2 {
+                font-size: 2.5rem;
+                color: #2c3e50;
+                margin-bottom: 2.5rem;
+                text-align: center;
+            }
+
+            .card-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+
+            .card {
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+                transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .card h3 {
+                font-size: 1.5rem;
+                color: #3498db;
+                margin-bottom: 0.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 1rem;
+            }
+
+            .card ul {
+                list-style-type: disc;
+                padding-left: 1.5rem;
+                margin-top: 0;
+                margin-bottom: 1.5rem;
+            }
+
+            .card li {
+                font-size: 0.95rem;
+                color: #555;
+                margin-bottom: 0.5rem;
+            }
+
+            .card a {
+                display: inline-block;
+                text-decoration: none;
+                background-color: #34495e;
+                color: #fff;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+            .card a:hover {
+                background-color: #2c3e50;
+            }
+
+            /* --- Detailed Experience Styles --- */
+            .detailed-experience-section {
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                margin: 0 auto;
+            }
+
+            .detailed-section {
+                background-color: #fff;
+                padding: 2.5rem;
+                margin-bottom: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            .detailed-section h3 {
+                font-size: 2rem;
+                color: #2c3e50;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .detailed-section p {
+                font-size: 1.1rem;
+                color: #555;
+                margin-bottom: 1.5rem;
+            }
+
+            .back-button {
+                display: inline-block;
+                text-decoration: none;
+                background-color: #3498db;
+                color: #fff;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+            .back-button:hover {
+                background-color: #2980b9;
+            }
+
+            /* --- Contact Form Styles --- */
+            .contact-section {
+                padding: 2rem 2rem;
+                max-width: 900px; /* Consistent width */
+                margin: 0 auto;
+            }
+
+            .contact-section h2 {
+                font-size: 2.5rem;
+                color: #2c3e50;
+                margin-bottom: 2.5rem;
+                text-align: center;
+            }
+
+            .form-message {
+                display: none;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                padding: 1rem;
+                border-radius: 8px;
+                font-weight: bold;
+            }
+
+            .form-message.success {
+                background-color: #e8f5e9;
+                color: #2e7d32;
+            }
+
+            .form-message.error {
+                background-color: #fce4e4;
+                color: #c62828;
+            }
+
+            .contact-form-container {
+                background-color: #fff;
+                padding: 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            .form-group {
+                margin-bottom: 1.5rem;
+            }
+
+            .form-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                color: #34495e;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                width: 100%;
+                padding: 0.75rem;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 1rem;
+                transition:
+                    border-color 0.3s ease,
+                    box-shadow 0.3s ease;
+                box-sizing: border-box;
+            }
+
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+                outline: none;
+                border-color: #3498db;
+                box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+
+            .form-group textarea {
+                resize: vertical;
+                min-height: 150px;
+            }
+
+            .submit-button {
+                display: block;
+                width: 100%;
+                padding: 1rem;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .submit-button:hover {
+                background-color: #2980b9;
+            }
+
+            /* --- Footer Styles --- */
+            .footer-section {
+                text-align: center;
+                padding: 2rem;
+                background-color: #2c3e50;
+                color: #fff;
+                margin-top: 2rem;
+            }
+
+            .footer-section p {
+                margin: 0;
+                font-size: 0.9rem;
+            }
+
+            /* --- Responsive Design --- */
+            @media (max-width: 768px) {
+                .hero-section {
+                    padding: 1rem 1rem;
+                }
+                .contact-details h1 {
+                    font-size: 2rem;
+                }
+                .contact-details p {
+                    font-size: 1rem;
+                }
+                .contact-links a {
+                    margin: 0 0.5rem;
+                }
+                .about-section {
+                    padding: 1rem 1rem;
+                }
+                .about-content {
+                    padding: 1.5rem;
+                }
+                .about-content h2 {
+                    font-size: 1.8rem;
+                }
+                .about-content p {
+                    font-size: 1rem;
+                }
+                .content-container {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .index-resume-section {
+                    padding: 1rem 1rem;
+                }
+                .resume-column a {
+                    width: 100%;
+                }
+                .tools-section {
+                    padding: 1rem 1rem;
+                }
+                .tools-container {
+                    padding: 1.5rem;
+                }
+                .tab-buttons {
+                    flex-wrap: wrap;
+                }
+                .tab-button {
+                    padding: 0.75rem 1rem;
+                }
+                .experience-section {
+                    padding: 1rem 1rem;
+                }
+                .card-grid {
+                    grid-template-columns: 1fr;
+                }
+                .contact-section {
+                    padding: 1rem 1rem;
+                }
+                .contact-form-container {
+                    padding: 1.5rem;
+                }
+                .footer-section {
+                    margin-top: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <!-- <img alt="Santhosh.JPG" src="https://github.com/Santhosh-KS/PortFolioWebsite/blob/main/imgs/Santhosh.JPG?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"> -->
+            <img
+                src="https://github.com/Santhosh-KS/PortFolioWebsite/blob/main/imgs/Santhosh.JPG?raw=true"
+                alt="Profile Photo"
+                class="hero-image"
+            />
+            <div class="contact-details">
+                <h1>Santhosh K S</h1>
+                <p>Experienced Professional</p>
+                <div class="contact-links">
+                    <a href="mailto:santhosh@techkunstler.com">Email</a>
+                    <a href="https://www.linkedin.com/in/santhosh-k-s-07542623/"
+                        >LinkedIn</a
+                    >
+                    <a href="https://github.com/Santhosh-KS" target="_blank"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://www.xing.com/profile/Santhosh_KammarShankarachar/web_profiles"
+                        target="_blank"
+                        >Xing</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- About Me Section -->
+        <section id="about-me" class="about-section">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    With 17 years of experience in the software engineering
+                    industry, I am passionate about building innovative
+                    solutions that drive technology forward. My journey has
+                    given me a strong background in a diverse range of
+                    technologies including C, C++, Go, Python, and Swift, with a
+                    specialization in embedded systems and the networking
+                    domain. I thrive in collaborative environments, leveraging
+                    best practices to optimize performance and enhance user
+                    experiences in the Automotive and Telecommunications
+                    industries. My work is driven by a commitment to quality and
+                    a passion for continuous learning, always seeking to write
+                    clean, maintainable code. I am excited by the future of
+                    technology and look forward to new challenges where I can
+                    contribute my expertise and passion.
+                </p>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Navigation Index & Resume Section -->
+        <section id="index-resume" class="index-resume-section">
+            <div class="content-container">
+                <div class="index-column">
+                    <h2>Jump to Section</h2>
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="resume-column">
+                    <h2>Download Resume</h2>
+                    <!-- Google Drive button to open in a new tab -->
+                    <a
+                        href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID"
+                        target="_blank"
+                        class="google-drive-button"
+                        aria-label="Download Resumes from Google Drive"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="48"
+                            height="48"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-file-text"
+                        >
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            ></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Tools Section -->
+        <section id="tools" class="tools-section">
+            <div class="tools-container">
+                <h2>My Toolbox</h2>
+                <div class="tab-buttons">
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'DevOps')"
+                    >
+                        DevOps
+                    </button>
+                    <button
+                        class="tab-button"
+                        onclick="openTab(event, 'Frontend')"
+                    >
+                        Frontend
+                    </button>
+                    <button
+                        class="tab-button"
+                        onclick="openTab(event, 'Backend')"
+                    >
+                        Backend
+                    </button>
+                </div>
+                <div id="DevOps" class="tab-content active">
+                    <ul class="tool-list">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Jenkins</li>
+                        <li>Terraform</li>
+                        <li>AWS</li>
+                        <li>Azure</li>
+                    </ul>
+                </div>
+                <div id="Frontend" class="tab-content">
+                    <ul class="tool-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div id="Backend" class="tab-content">
+                    <ul class="tool-list">
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Node.js</li>
+                        <li>Java</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Experience Cards Section -->
+        <section id="experience" class="experience-section">
+            <h2>My Experience</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Company A</h3>
+                    <p>
+                        A brief introduction to your time at Company A,
+                        highlighting your role and key accomplishments.
+                    </p>
+                    <ul>
+                        <li>Highlight a key project or achievement here.</li>
+                        <li>
+                            Describe a specific skill or technology you used.
+                        </li>
+                        <li>Mention a positive outcome or contribution.</li>
+                    </ul>
+                    <a href="#experience-details-1">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Company B</h3>
+                    <p>
+                        A brief introduction to your time at Company B,
+                        highlighting your role and key accomplishments.
+                    </p>
+                    <ul>
+                        <li>Highlight a key project or achievement here.</li>
+                        <li>
+                            Describe a specific skill or technology you used.
+                        </li>
+                        <li>Mention a positive outcome or contribution.</li>
+                    </ul>
+                    <a href="#experience-details-2">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Company C</h3>
+                    <p>
+                        A brief introduction to your time at Company C,
+                        highlighting your role and key accomplishments.
+                    </p>
+                    <ul>
+                        <li>Highlight a key project or achievement here.</li>
+                        <li>
+                            Describe a specific skill or technology you used.
+                        </li>
+                        <li>Mention a positive outcome or contribution.</li>
+                    </ul>
+                    <a href="#experience-details-3">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Company D</h3>
+                    <p>
+                        A brief introduction to your time at Company D,
+                        highlighting your role and key accomplishments.
+                    </p>
+                    <ul>
+                        <li>Highlight a key project or achievement here.</li>
+                        <li>
+                            Describe a specific skill or technology you used.
+                        </li>
+                        <li>Mention a positive outcome or contribution.</li>
+                    </ul>
+                    <a href="#experience-details-4">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Company E</h3>
+                    <p>
+                        A brief introduction to your time at Company E,
+                        highlighting your role and key accomplishments.
+                    </p>
+                    <ul>
+                        <li>Highlight a key project or achievement here.</li>
+                        <li>
+                            Describe a specific skill or technology you used.
+                        </li>
+                        <li>Mention a positive outcome or contribution.</li>
+                    </ul>
+                    <a href="#experience-details-5">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Detailed Experience Sections -->
+        <section class="detailed-experience-section">
+            <div id="experience-details-1" class="detailed-section">
+                <h3>Details for Company A</h3>
+                <p>
+                    Here you can write a more comprehensive overview of your
+                    role at Company A. Include specific projects, technologies
+                    used, your responsibilities, and the impact of your work.
+                    This is where you can elaborate on the bullet points from
+                    the card.
+                </p>
+                <a href="#experience" class="back-button">Back to Experience</a>
+            </div>
+            <div id="experience-details-2" class="detailed-section">
+                <h3>Details for Company B</h3>
+                <p>
+                    Elaborate on your time at Company B, including key projects,
+                    achievements, and the skills you developed. You can discuss
+                    challenges you overcame and how you contributed to team
+                    goals.
+                </p>
+                <a href="#experience" class="back-button">Back to Experience</a>
+            </div>
+            <div id="experience-details-3" class="detailed-section">
+                <h3>Details for Company C</h3>
+                <p>
+                    Provide detailed information about your work at Company C.
+                    You might want to include metrics or quantifiable results to
+                    demonstrate your impact.
+                </p>
+                <a href="#experience" class="back-button">Back to Experience</a>
+            </div>
+            <div id="experience-details-4" class="detailed-section">
+                <h3>Details for Company D</h3>
+                <p>
+                    Describe your experiences and contributions at Company D in
+                    detail. Use this space to showcase a specific project or
+                    achievement that you are particularly proud of.
+                </p>
+                <a href="#experience" class="back-button">Back to Experience</a>
+            </div>
+            <div id="experience-details-5" class="detailed-section">
+                <h3>Details for Company E</h3>
+                <p>
+                    Share the specifics of your time at Company E, highlighting
+                    your responsibilities and any innovative solutions you
+                    helped to create.
+                </p>
+                <a href="#experience" class="back-button">Back to Experience</a>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="form-message" id="form-message"></div>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email ID</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type">I am a...</label>
+                        <select id="contact-type" name="contact-type" required>
+                            <option value="recruiter">Recruiter</option>
+                            <option value="consultant">Consultant</option>
+                            <option value="firm">Firm</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </footer>
+
+        <!-- JavaScript for the tabbed interface and form submission -->
+        <script>
+            function openTab(evt, tabName) {
+                let i, tabcontent, tabbuttons;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tabbuttons = document.getElementsByClassName("tab-button");
+                for (i = 0; i < tabbuttons.length; i++) {
+                    tabbuttons[i].className = tabbuttons[i].className.replace(
+                        " active",
+                        "",
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelector(".tab-button").click();
+            });
+
+            // Form submission logic
+            document
+                .getElementById("contact-form")
+                .addEventListener("submit", async function (event) {
+                    event.preventDefault(); // Prevent the default form submission
+
+                    const form = event.target;
+                    const messageBox = document.getElementById("form-message");
+                    const submitButton = form.querySelector(".submit-button");
+                    const formData = new FormData(form);
+
+                    const data = Object.fromEntries(formData.entries());
+
+                    messageBox.style.display = "none";
+                    submitButton.disabled = true;
+                    submitButton.textContent = "Sending...";
+
+                    const webhookUrl =
+                        "https://n8n.techkunstler.com/webhook-test/9353fe1c-4a1d-4f3d-8a25-6dacb2fa5d54";
+
+                    try {
+                        const response = await fetch(webhookUrl, {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify(data),
+                        });
+
+                        if (response.ok) {
+                            messageBox.className = "form-message success";
+                            messageBox.textContent =
+                                "Thank you! Your message has been sent successfully.";
+                            messageBox.style.display = "block";
+                            form.reset(); // Clear the form
+                            // Scroll to the top of the page smoothly
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth",
+                            });
+                        } else {
+                            messageBox.className = "form-message error";
+                            messageBox.textContent =
+                                "An error occurred. Please try again.";
+                            messageBox.style.display = "block";
+                        }
+                    } catch (error) {
+                        console.error("Error:", error);
+                        messageBox.className = "form-message error";
+                        messageBox.textContent =
+                            "Network error. Please check your connection and try again.";
+                        messageBox.style.display = "block";
+                    } finally {
+                        submitButton.disabled = false;
+                        submitButton.textContent = "Send Message";
+                    }
+                });
+        </script>
+    </body>
+</html>
