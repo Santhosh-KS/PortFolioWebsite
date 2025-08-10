@@ -647,7 +647,9 @@
                             >
                         </li>
                         <li>
-                            <a href="#tools" data-key="index-tools">Tools</a>
+                            <a href="#tools" data-key="index-tools">
+                                Tech Stack
+                            </a>
                         </li>
                         <li>
                             <a href="#contact" data-key="index-contact"
@@ -944,8 +946,19 @@
 
         <!-- Experience Cards Section -->
         <section id="experience" class="experience-section">
-            <h2 data-key="experience-title">My Experience</h2>
+            <h2 data-key="experience-title">Projects</h2>
             <div class="card-grid">
+                <div class="card">
+                    <h3 data-key="exp-ai-auto-title">AI Auto</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-ai-auto-place-duration"
+                    ></p>
+                    <p data-key="exp-ai-auto-summary">AI Summary</p>
+                    <a href="#ai-auto-details" data-key="exp-read-more-link">
+                        Read More
+                    </a>
+                </div>
                 <div class="card">
                     <h3 data-key="exp-adas-sme-title">ADAS SME</h3>
                     <p
@@ -1023,10 +1036,48 @@
 
         <!-- Detailed Experience Sections -->
         <section class="detailed-experience-section">
-            <div id="adas-sme-details" class="detailed-section">
-                <h2 data-key="exp-details-adas-sme-title">
+            <div id="ai-auto-details" class="detailed-section">
+                <h2 data-key="exp-details-ai-auto-title">ADAS SME</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-ai-auto-place-duration"
+                ></p>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-ai-auto-clients"
+                >
                     Details for Company A
-                </h2>
+                </p>
+                <p data-key="exp-details-ai-auto-text">details</p>
+                <ul>
+                    <li data-key="exp-details-ai-auto-text-point-1">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-2">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-3">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-4">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-5">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-6">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-7">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-ai-auto-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-ai-auto-techstack-point-1">p1</li>
+                    <li data-key="exp-details-ai-auto-techstack-point-2">p1</li>
+                    <li data-key="exp-details-ai-auto-techstack-point-3">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="adas-sme-details" class="detailed-section">
+                <h2 data-key="exp-details-adas-sme-title">ADAS SME</h2>
                 <p
                     style="font-style: italic"
                     data-key="exp-sme-place-duration"
@@ -1362,11 +1413,14 @@
                         "index-title": "Index",
                         "index-about": "About Me",
                         "index-experience": "Experience",
-                        "index-tools": "Tools",
+                        "index-tools": "Tech Stack",
                         "index-contact": "Contact",
                         "resume-title": "Download My Resume",
                         "tools-title": "Tech Stack",
                         "experience-title": "Projects",
+                        "exp-ai-auto-title": "AI Automation Consultant",
+                        "exp-ai-auto-summary":
+                            "Integrate the AI automation systems into the existing websites. Delivered complete AI automation solutions using n8n and different AI models.",
                         "exp-adas-sme-title":
                             "ADAS Subject Matter Expert (SME)",
                         "exp-adas-sme-summary":
@@ -1396,8 +1450,38 @@
                         "exp-mt-summary":
                             "Led implementation of Conax Conditional Access System for DishTV's set-top box platform, delivering critical security components that protected premium content and enabled subscription-based business model through rigorous certification process.",
                         "exp-read-more-link": "Read More",
+                        "exp-details-ai-auto-title":
+                            "ADAS Subject Matter Expert (SME).",
+                        "exp-ai-auto-place-duration":
+                            "Freelance | Düsseldorf, Germany | Mar 2025 - June 2025",
+                        "exp-details-ai-auto-clients": "",
+                        "exp-details-ai-auto-text":
+                            "Integrate the AI automation systems into the existing websites. Delivered complete AI automation solutions using n8n and AI models.",
+                        "exp-details-ai-auto-text-point-1":
+                            "Integrate the AI into the existing websites and automate the sales funnel.",
+                        "exp-details-ai-auto-text-point-2":
+                            "Executed comprehensive workflow automation using n8n.",
+                        "exp-details-ai-auto-text-point-3":
+                            "Create a sales funnel using a cold email approach. and provide dynamic notifications about the potential customers to the sales teams in Slack channels.",
+                        "exp-details-ai-auto-text-point-4":
+                            "Build custom RAG systems to answer customer queries in the form of AI chatbots.",
+                        "exp-details-ai-auto-text-point-5":
+                            "Create follow-up workflows and tracking mechanisms to enhance the sales ROI.",
+                        "exp-details-ai-auto-text-point-6":
+                            "Conduct market research on the best available models to address the specific problem and advise clients on better and more cost-effective alternatives.",
+                        "exp-details-ai-auto-text-point-7":
+                            "Integrate different AI providers into the system and evaluate the performance of the models for a given task using custom KPI’s.",
+                        "exp-details-ai-auto-techstack": "Technology Stack",
+                        "exp-details-ai-auto-techstack-point-1":
+                            "RAG, MCP, Agentic AI, n8n, Vapi, OpenAI, Claude, Gemini, Ollama, Huggingfaces, Python, Langchain, Langfuse, Pydantic AI, Crawl4AI, Smolagents",
+                        "exp-details-ai-auto-techstack-point-2":
+                            "Azure AI integrations, MLOps, DVC, Custom LLM's, Prompt Engineering.",
+                        "exp-details-ai-auto-techstack-point-3":
+                            "GitHub, Jenkins, CI-CD, Jira, SCRUM, Agile Methodologies, DevOps, Docker",
                         "exp-details-adas-sme-title":
                             "ADAS Subject Matter Expert (SME).",
+                        "exp-ai-auto-place-duration":
+                            "Freelance | Düsseldorf, Germany | Mar 2025 - June 2025",
                         "exp-sme-place-duration":
                             "KPIT GmbH | Munich, Germany | Feb 2021 - May 2024",
                         "exp-details-sme-clients":
