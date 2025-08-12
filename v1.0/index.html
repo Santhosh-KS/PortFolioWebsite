@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Santhosh's Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section id="hero" class="hero-section">
+            <img
+                src="https://raw.githubusercontent.com/Santhosh-KS/PortFolioWebsite/main/imgs/Santhosh.JPG"
+                alt="Your Profile Photo"
+                class="hero-image"
+            />
+            <div class="contact-details">
+                <h1>Santhosh K S</h1>
+                <p>Seasond Software Professional</p>
+                <div class="contact-links">
+                    <a
+                        href="mailto:youremail@example.com"
+                        data-key="hero-email-link"
+                        >Email</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/santhosh-k-s-07542623/"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                    <a href="https://github.com/Santhosh-KS" target="_blank"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://www.xing.com/profile/Santhosh_KammarShankarachar/web_profiles"
+                        target="_blank"
+                        >Xing</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="about-me" class="about-section">
+            <div class="about-content">
+                <div class="language-selector-container">
+                    <select id="language-selector" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </div>
+                <h2 data-key="about-me-title">About Me</h2>
+                <p data-key="about-me-text">about_me</p>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="index-resume" class="index-resume-section">
+            <div class="content-container">
+                <div class="index-column">
+                    <h2 data-key="index-title">Jump to Section</h2>
+                    <ul>
+                        <li>
+                            <a href="#about-me" data-key="index-about"
+                                >About Me</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#experience" data-key="index-experience"
+                                >Experience</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#tools" data-key="index-tools">
+                                Tech Stack
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" data-key="index-contact"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume-column">
+                    <h2 data-key="resume-title">Download Resume</h2>
+                    <a
+                        href="https://drive.google.com/drive/folders/1wD1Zj6q27GtqwFGQeWlzW3KOA0VGgHVl?usp=sharing"
+                        target="_blank"
+                        class="google-drive-button"
+                        aria-label="Download Resumes from Google Drive"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="48"
+                            height="48"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-file-text"
+                        >
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            ></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="tools" class="tools-section">
+            <div class="tools-container">
+                <h2 data-key="tools-title">My Toolbox</h2>
+                <div class="tab-buttons">
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'ProgrammingLanguages')"
+                    >
+                        Languages
+                    </button>
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'AI')"
+                    >
+                        AI
+                    </button>
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'Cloud')"
+                    >
+                        Cloud
+                    </button>
+                    <button
+                        class="tab-button"
+                        onclick="openTab(event, 'FullStack')"
+                    >
+                        FullStack
+                    </button>
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'Embedded')"
+                    >
+                        Embedded
+                    </button>
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'BuildAndRelease')"
+                    >
+                        Build
+                    </button>
+                    <button
+                        class="tab-button active"
+                        onclick="openTab(event, 'Collaboration')"
+                    >
+                        Collab..
+                    </button>
+                </div>
+                <div id="ProgrammingLanguages" class="tab-content active">
+                    <ul class="tool-list">
+                        <li>C</li>
+                        <li>C++/11/14/17</li>
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Swift</li>
+                        <li>Erlang</li>
+                        <li>MATLAB</li>
+                        <li>Simulink</li>
+                        <li>Javascript</li>
+                        <li>Typescript</li>
+                        <li>Elixir</li>
+                        <li>Elm</li>
+                        <li>SQL</li>
+                        <li>Lua</li>
+                        <li>Bash</li>
+                        <li>Perl</li>
+                        <li>CUDA</li>
+                        <li>Design Patterns</li>
+                        <li>OOPs</li>
+                        <li>Functional Programming</li>
+                    </ul>
+                </div>
+                <div id="AI" class="tab-content active">
+                    <ul class="tool-list">
+                        <li>Pytorch</li>
+                        <li>TensorFlow</li>
+                        <li>FastAPI</li>
+                        <li>FastAI</li>
+                        <li>Pydantic AI</li>
+                        <li>Crawl4AI</li>
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Scikit-Learn</li>
+                        <li>Matplotlib</li>
+                        <li>n8n</li>
+                        <li>LLM</li>
+                        <li>RAG</li>
+                        <li>MCP</li>
+                        <li>AI Agents</li>
+                        <li>VAPI</li>
+                        <li>HuggingFaces</li>
+                        <li>Ollama</li>
+                        <li>OpenAI</li>
+                        <li>Claude</li>
+                        <li>Mistral</li>
+                    </ul>
+                </div>
+                <div id="Embedded" class="tab-content active">
+                    <ul class="tool-list">
+                        <li>Infenion-Aurix</li>
+                        <li>QC-Snapdragon</li>
+                        <li>QCS6490</li>
+                        <li>Nvidia</li>
+                        <li>STM32</li>
+                        <li>ESP32</li>
+                        <li>PIC</li>
+                        <li>RTOS</li>
+                        <li>FreeRTOS</li>
+                        <li>VxWorks</li>
+                        <li>QNX</li>
+                        <li>Zypher</li>
+                    </ul>
+                    <h3 style="text-align: center">Editors</h3>
+                    <ul class="tool-list">
+                        <li>Vim</li>
+                        <li>Neo-vim</li>
+                        <li>Zed</li>
+                        <li>Xcode</li>
+                        <li>Eclipse</li>
+                        <li>Atom</li>
+                        <li>VScode</li>
+                        <li>Notepad++</li>
+                        <li>IntelliJ</li>
+                        <li>Cursor</li>
+                        <li>Copilot</li>
+                        <li>Aurdino-IDE</li>
+                        <li>STM32Cube</li>
+                        <li>Espressif-IDE</li>
+                        <li>JupiterNotebooks</li>
+                    </ul>
+                </div>
+                <div id="Cloud" class="tab-content active">
+                    <ul class="tool-list">
+                        <li>DevOps</li>
+                        <li>MLOps</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>API</li>
+                        <li>REST</li>
+                        <li>Kubernetes</li>
+                        <li>Jenkins</li>
+                        <li>Terraform</li>
+                        <li>AWS</li>
+                        <li>Azure</li>
+                        <li>GCP</li>
+                        <li>Kafka</li>
+                        <li>YAML</li>
+                    </ul>
+                    <h3 style="text-align: center">Monitoring and Security</h3>
+                    <ul class="tool-list">
+                        <li>Grafana</li>
+                        <li>Prometheus</li>
+                        <li>Sentry</li>
+                        <li>PipeDrive</li>
+                        <li>Zookeeper</li>
+                    </ul>
+                </div>
+                <div id="BuildAndRelease" class="tab-content">
+                    <ul class="tool-list">
+                        <li>GitHub</li>
+                        <li>GitLab</li>
+                        <li>BitBucket</li>
+                        <li>Gerrit</li>
+                        <li>Svn</li>
+                        <li>ClearCase</li>
+                        <li>Bazel</li>
+                        <li>Make</li>
+                        <li>CMake</li>
+                        <li>Docker</li>
+                        <li>Ninja</li>
+                        <li>pip</li>
+                        <li>npm</li>
+                        <li>yarn</li>
+                        <li>Jinja</li>
+                        <li>mix</li>
+                        <li>go-mod</li>
+                        <li>gradle</li>
+                        <li>GDB</li>
+                        <li>LLVM</li>
+                        <li>CI-CD</li>
+                        <li>Ansibel</li>
+                        <li>Jenkins</li>
+                        <li>Zull</li>
+                    </ul>
+                </div>
+                <div id="FullStack" class="tab-content">
+                    <h3 style="text-align: center">Backend</h3>
+                    <ul class="tool-list">
+                        <li>Go</li>
+                        <li>Python</li>
+                        <li>Phoenix</li>
+                        <li>Erlang-VM</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <h3 style="text-align: center">Frontend</h3>
+                    <ul class="tool-list">
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>SVG</li>
+                        <li>JSON</li>
+                        <li>Nest.js</li>
+                        <li>Node.js</li>
+                        <li>LiveView</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                    </ul>
+                    <h3 style="text-align: center">CSS</h3>
+                    <ul class="tool-list">
+                        <li>Bulma</li>
+                        <li>Tailwind</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div id="Collaboration" class="tab-content">
+                    <h3 style="text-align: center">UI Design</h3>
+                    <ul class="tool-list">
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Photoshop</li>
+                        <li>Sketch</li>
+                        <li>Zeplin</li>
+                    </ul>
+                    <h3 style="text-align: center">Agile Methodologies</h3>
+                    <ul class="tool-list">
+                        <li>SCRUM</li>
+                        <li>Large Scale SCRUM</li>
+                        <li>Kanban</li>
+                    </ul>
+                    <h3 style="text-align: center">Tools</h3>
+                    <ul class="tool-list">
+                        <li>Jira</li>
+                        <li>Confluence</li>
+                        <li>Artifactory</li>
+                        <li>Codebeamer</li>
+                        <li>DOORS</li>
+                        <li>Miro</li>
+                        <li>MS-Teams</li>
+                        <li>Zoom</li>
+                        <li>Discord</li>
+                        <li>Slack</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="experience" class="experience-section">
+            <h2 data-key="experience-title">Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 data-key="exp-ai-auto-title">AI Auto</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-ai-auto-place-duration"
+                    ></p>
+                    <p data-key="exp-ai-auto-summary">AI Summary</p>
+                    <a href="#ai-auto-details" data-key="exp-read-more-link">
+                        Read More
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-gastro-title">AI Auto</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-gastro-place-duration"
+                    ></p>
+                    <p data-key="exp-gastro-summary">AI Summary</p>
+                    <a href="#gastro-details" data-key="exp-read-more-link">
+                        Read More
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-cnc-title">AI Auto</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-cnc-place-duration"
+                    ></p>
+                    <p data-key="exp-cnc-summary">AI Summary</p>
+                    <a href="#cnc-details" data-key="exp-read-more-link">
+                        Read More
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-adas-sme-title">ADAS SME</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-sme-place-duration"
+                    ></p>
+                    <p data-key="exp-adas-sme-summary">ADAS SME summary</p>
+                    <a href="#adas-sme-details" data-key="exp-read-more-link">
+                        Read More
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3 data-key="exp-adas-aspice-title">ADAS ASPICE</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-adas-aspice-place-duration"
+                    ></p>
+                    <p data-key="exp-adas-aspice-summary">ADAS ASPICE</p>
+                    <a
+                        href="#adas-aspice-details"
+                        data-key="exp-read-more-link"
+                    >
+                        Read More
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-bmw-cv-title">Computer Vision</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-bmw-cv-place-duration"
+                    ></p>
+                    <p data-key="exp-bmw-cv-summary">CV Summary</p>
+                    <a href="#exp-bmw-cv-details" data-key="exp-read-more-link"
+                        >Read More</a
+                    >
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-anova-title">Network and ML</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-anova-place-duration"
+                    ></p>
+                    <p data-key="exp-anova-summary">Network and ML Summary</p>
+                    <a href="#exp-anova-details" data-key="exp-read-more-link"
+                        >Read More</a
+                    >
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-moto-title">Network and ML</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-moto-place-duration"
+                    ></p>
+                    <p data-key="exp-moto-summary">Network and ML Summary</p>
+                    <a href="#exp-moto-details" data-key="exp-read-more-link"
+                        >Read More</a
+                    >
+                </div>
+                <div class="card">
+                    <h3 data-key="exp-mt-title">Network and ML</h3>
+                    <p
+                        style="font-style: italic"
+                        data-key="exp-mt-place-duration"
+                    ></p>
+                    <p data-key="exp-mt-summary">Network and ML Summary</p>
+                    <a href="#exp-mt-details" data-key="exp-read-more-link"
+                        >Read More</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section class="detailed-experience-section">
+            <div id="ai-auto-details" class="detailed-section">
+                <h2 data-key="exp-details-ai-auto-title">ADAS SME</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-ai-auto-place-duration"
+                ></p>
+                <p data-key="exp-details-ai-auto-text">details</p>
+                <ul>
+                    <li data-key="exp-details-ai-auto-text-point-1">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-2">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-3">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-4">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-5">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-6">p1</li>
+                    <li data-key="exp-details-ai-auto-text-point-7">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-ai-auto-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-ai-auto-techstack-point-1">p1</li>
+                    <li data-key="exp-details-ai-auto-techstack-point-2">p1</li>
+                    <li data-key="exp-details-ai-auto-techstack-point-3">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="gastro-details" class="detailed-section">
+                <h2 data-key="exp-details-gastro-title">ADAS SME</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-gastro-place-duration"
+                ></p>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-gastro-clients"
+                >
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-gastro-text">details</p>
+                <ul>
+                    <li data-key="exp-details-gastro-text-point-1">p1</li>
+                    <li data-key="exp-details-gastro-text-point-2">p1</li>
+                    <li data-key="exp-details-gastro-text-point-3">p1</li>
+                    <li data-key="exp-details-gastro-text-point-4">p1</li>
+                    <li data-key="exp-details-gastro-text-point-5">p1</li>
+                    <li data-key="exp-details-gastro-text-point-6">p1</li>
+                    <li data-key="exp-details-gastro-text-point-7">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-gastro-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-gastro-techstack-point-1">p1</li>
+                    <li data-key="exp-details-gastro-techstack-point-2">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+
+            <div id="cnc-details" class="detailed-section">
+                <h2 data-key="exp-details-cnc-title">ADAS SME</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-cnc-place-duration"
+                ></p>
+                <p style="font-weight: bold" data-key="exp-details-cnc-clients">
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-cnc-text">details</p>
+                <ul>
+                    <li data-key="exp-details-cnc-text-point-1">p1</li>
+                    <li data-key="exp-details-cnc-text-point-2">p1</li>
+                    <li data-key="exp-details-cnc-text-point-3">p1</li>
+                    <li data-key="exp-details-cnc-text-point-4">p1</li>
+                    <li data-key="exp-details-cnc-text-point-5">p1</li>
+                    <li data-key="exp-details-cnc-text-point-6">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-cnc-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-cnc-techstack-point-1">p1</li>
+                    <li data-key="exp-details-cnc-techstack-point-2">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="adas-sme-details" class="detailed-section">
+                <h2 data-key="exp-details-adas-sme-title">ADAS SME</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-sme-place-duration"
+                ></p>
+                <p style="font-weight: bold" data-key="exp-details-sme-clients">
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-sme-text">details</p>
+                <ul>
+                    <li data-key="exp-details-sme-text-point-1">p1</li>
+                    <li data-key="exp-details-sme-text-point-2">p1</li>
+                    <li data-key="exp-details-sme-text-point-3">p1</li>
+                    <li data-key="exp-details-sme-text-point-4">p1</li>
+                    <li data-key="exp-details-sme-text-point-5">p1</li>
+                    <li data-key="exp-details-sme-text-point-6">p1</li>
+                    <li data-key="exp-details-sme-text-point-7">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-sme-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-sme-techstack-point-1">p1</li>
+                    <li data-key="exp-details-sme-techstack-point-2">p1</li>
+                    <li data-key="exp-details-sme-techstack-point-3">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+
+            <div id="adas-aspice-details" class="detailed-section">
+                <h2 data-key="exp-details-adas-aspice-title">
+                    Details for Company A
+                </h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-adas-aspice-place-duration"
+                ></p>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-aspice-clients"
+                >
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-aspice-text">details</p>
+                <ul>
+                    <li data-key="exp-details-aspice-text-point-1">p1</li>
+                    <li data-key="exp-details-aspice-text-point-2">p1</li>
+                    <li data-key="exp-details-aspice-text-point-3">p1</li>
+                    <li data-key="exp-details-aspice-text-point-4">p1</li>
+                    <li data-key="exp-details-aspice-text-point-5">p1</li>
+                    <li data-key="exp-details-aspice-text-point-6">p1</li>
+                    <li data-key="exp-details-aspice-text-point-7">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-aspice-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-aspice-techstack-point-1">p1</li>
+                    <li data-key="exp-details-aspice-techstack-point-2">p1</li>
+                    <li data-key="exp-details-aspice-techstack-point-3">p1</li>
+                    <li data-key="exp-details-aspice-techstack-point-4">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="exp-bmw-cv-details" class="detailed-section">
+                <h2 data-key="exp-details-adas-bmw-cv-title">details</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-bmw-cv-place-duration"
+                ></p>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-bmw-cv-clients"
+                >
+                    details
+                </p>
+                <p data-key="exp-details-bmw-cv-text">Details</p>
+                <ul>
+                    <li data-key="exp-details-bmw-cv-text-point-1">p1</li>
+                    <li data-key="exp-details-bmw-cv-text-point-2">p1</li>
+                    <li data-key="exp-details-bmw-cv-text-point-3">p1</li>
+                    <li data-key="exp-details-bmw-cv-text-point-4">p1</li>
+                    <li data-key="exp-details-bmw-cv-text-point-5">p1</li>
+                    <li data-key="exp-details-bmw-cv-text-point-6">p1</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-bmw-cv-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-bmw-cv-techstack-point-1">p1</li>
+                    <li data-key="exp-details-bmw-cv-techstack-point-2">p1</li>
+                    <li data-key="exp-details-bmw-cv-techstack-point-3">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="exp-anova-details" class="detailed-section">
+                <h2 data-key="exp-details-anova-title">Details for Anova</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-anova-place-duration"
+                ></p>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-anova-clients"
+                >
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-anova-text">Details</p>
+                <ul>
+                    <li data-key="exp-details-anova-text-point-1">Point-1</li>
+                    <li data-key="exp-details-anova-text-point-2">Point-2</li>
+                    <li data-key="exp-details-anova-text-point-3">Point-3</li>
+                    <li data-key="exp-details-anova-text-point-4">Point-4</li>
+                    <li data-key="exp-details-anova-text-point-5">Point-5</li>
+                    <li data-key="exp-details-anova-text-point-6">Point-6</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-anova-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-anova-techstack-point-1">p1</li>
+                    <li data-key="exp-details-anova-techstack-point-2">p1</li>
+                    <li data-key="exp-details-anova-techstack-point-3">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="exp-moto-details" class="detailed-section">
+                <h2 data-key="exp-details-moto-title">Details for Anova</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-moto-place-duration"
+                ></p>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-moto-clients"
+                >
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-moto-text">Details</p>
+                <ul>
+                    <li data-key="exp-details-moto-text-point-1">Point-1</li>
+                    <li data-key="exp-details-moto-text-point-2">Point-2</li>
+                    <li data-key="exp-details-moto-text-point-3">Point-3</li>
+                    <li data-key="exp-details-moto-text-point-4">Point-4</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-moto-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-moto-techstack-point-1">p1</li>
+                    <li data-key="exp-details-moto-techstack-point-2">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+            <div id="exp-mt-details" class="detailed-section">
+                <h2 data-key="exp-details-mt-title">Details for Anova</h2>
+                <p
+                    style="font-style: italic"
+                    data-key="exp-mt-place-duration"
+                ></p>
+                <p style="font-weight: bold" data-key="exp-details-mt-clients">
+                    Details for Company A
+                </p>
+                <p data-key="exp-details-mt-text">Details</p>
+                <ul>
+                    <li data-key="exp-details-mt-text-point-1">Point-1</li>
+                    <li data-key="exp-details-mt-text-point-2">Point-2</li>
+                    <li data-key="exp-details-mt-text-point-3">Point-3</li>
+                    <li data-key="exp-details-mt-text-point-4">Point-4</li>
+                </ul>
+                <p
+                    style="font-weight: bold"
+                    data-key="exp-details-mt-techstack"
+                >
+                    Some techstack
+                </p>
+                <ul>
+                    <li data-key="exp-details-mt-techstack-point-1">p1</li>
+                    <li data-key="exp-details-mt-techstack-point-2">p1</li>
+                </ul>
+                <a
+                    href="#experience"
+                    class="back-button"
+                    data-key="back-to-exp-link"
+                    >Back to Experience</a
+                >
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="contact" class="contact-section">
+            <h2 data-key="contact-title">Contact Me</h2>
+            <div class="form-message" id="form-message"></div>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-key="contact-label-name"
+                            >Your Name</label
+                        >
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-key="contact-label-email"
+                            >Your Email ID</label
+                        >
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" data-key="contact-label-type"
+                            >I am a...</label
+                        >
+                        <select id="contact-type" name="contact-type" required>
+                            <option
+                                value="recruiter"
+                                data-key="contact-option-recruiter"
+                            >
+                                Recruiter
+                            </option>
+                            <option
+                                value="consultant"
+                                data-key="contact-option-consultant"
+                            >
+                                Consultant
+                            </option>
+                            <option value="firm" data-key="contact-option-firm">
+                                Firm
+                            </option>
+                            <option
+                                value="other"
+                                data-key="contact-option-other"
+                            >
+                                Other
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-key="contact-label-message"
+                            >Your Message</label
+                        >
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                        ></textarea>
+                    </div>
+                    <button
+                        type="submit"
+                        class="submit-button"
+                        data-key="contact-submit-button"
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <footer class="footer-section">
+            <p>&copy; 2024 Santhosh K S. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

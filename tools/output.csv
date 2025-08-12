@@ -1,0 +1,164 @@
+Keys,Values
+about-me-title,About Me
+about-me-text,"With 17 years of experience in the software engineering industry, I am passionate about building innovative solutions that drive technology forward. My journey has given me a strong background in a diverse range of technologies including C, C++, Go, Python, and Swift, with a specialization in embedded systems and the networking domain. I thrive in collaborative environments, leveraging best practices to optimize performance and enhance user experiences in the Automotive and Telecommunications industries. My work is driven by a commitment to quality and a passion for continuous learning, always seeking to write clean, maintainable code. I am excited by the future of technology and look forward to new challenges where I can contribute my expertise and passion."
+index-title,Index
+index-about,About Me
+index-experience,Experience
+index-tools,Tech Stack
+index-contact,Contact
+resume-title,Download My Resume
+tools-title,Tech Stack
+experience-title,Projects
+exp-ai-auto-title,AI Automation Consultant
+exp-ai-auto-summary,Delivered complete AI automation solutions using n8n. Integrated the AI automation into the existing websites and workflows. 
+exp-gastro-title,Independent Product Consultant 
+exp-gastro-summary,"Delivered complete SaaS platform modernization for GastroSmart GmbH, transforming the legacy catering management system into a scalable NextJS/NestJS solution that improved performance and reduced operational costs. Directed end-to-end redevelopment while ensuring zero service disruption during customer transition."
+exp-cnc-title,Entrepreneur | Product Developer & IoT Solution Engineer 
+exp-cnc-summary,"Conceptualized and developed an innovative IoT cloud-connected CNC manufacturing solution from concept to MVP in 4 months, creating a complete product ecosystem including hardware (3-axis portable CNC machine), SaaS platform, and subscription business model that reduced manufacturing costs."
+exp-adas-sme-title,ADAS Subject Matter Expert (SME)
+exp-adas-sme-summary,I was responsible for delivering technical architecture and product development for multiple Level 1-2 ADAS features  for Qualcomm's automotive platform.
+exp-adas-aspice-title,ADAS ASPICE SYS-5 Verification and Validation.
+exp-adas-aspice-summary,Built a comprehensive test strategy for Qualcomm's ADAS level-1 and level-2 features as per the ASPICE SYS-5 Requirements V&V model.
+exp-bmw-cv-title,Computer Vision Engineer
+exp-bmw-cv-place-duration,"KPIT GmbH | Munich, Germany | June 2019 - Feb 2020"
+exp-bmw-cv-summary,"Delivered C++ validation framework for BMW's autonomous driving vehicle camera systems, establishing objective performance metrics and visualization tools for Mobileye camera integration in autonomous vehicle deployment."
+exp-anova-title,Network and ML Engineer
+exp-anova-place-duration,"Anova Data (Movik Networks) | Bengaluru, India | Feb 2017 - May 2019"
+exp-anova-summary,Built Highly scalable Analytical tools and software using C++/DPDK for the Telecom service provides. Which helps the Service providers to identify the anamolies in their Telecom network infrastructure.
+exp-moto-title,Senior Software Engineer
+exp-moto-place-duration,"Arris (Motorola) | Bengaluru, India | June 2011 - Jan 2017"
+exp-moto-summary,"Developed critical software components for set-top boxes and cable modems, architecting innovative video recording systems and Digital Rights Management solutions that enhanced user experience and content security."
+exp-mt-title,Senior Software Engineer
+exp-mt-place-duration,"MindTree Ltd | Bengaluru, India | Sept 2008 - June 2011"
+exp-mt-summary,"Led implementation of Conax Conditional Access System for DishTV's set-top box platform, delivering critical security components that protected premium content and enabled subscription-based business model through rigorous certification process."
+exp-read-more-link,Read More
+exp-details-ai-auto-title,AI Automation Consultant
+exp-ai-auto-place-duration,"Freelance | Düsseldorf, Germany | Mar 2025 - June 2025"
+exp-details-gastro-title,Independent Product Consultant
+exp-gastro-place-duration,"Freelance | Düsseldorf, Germany | Nov 2024 - April 2025"
+exp-details-gastro-clients,Gastrosmart GmbH
+exp-details-gastro-text,"Delivered complete SaaS platform modernization for GastroSmart GmbH, transforming the legacy catering management system into a scalable NextJS/NestJS solution that improved performance and reduced operational costs. Directed end-to-end redevelopment while ensuring zero service disruption during customer transition."
+exp-details-gastro-text-point-1,Executed comprehensive customer discovery with stakeholder interviews to identify pain points and develop a product roadmap.
+exp-details-gastro-text-point-2,"Built and optimized product backlog with prioritized user stories, translating business requirements into actionable development tasks."
+exp-details-gastro-text-point-3,"Directed a cross-functional team of frontend and backend developers, providing strategic direction while removing roadblocks."
+exp-details-gastro-text-point-4,Created a comprehensive documentation of the interfaces using the OpenAPI Specification.
+exp-details-gastro-text-point-5,"Deployed Kanban Agile methodology, establishing workflows and ceremonies that improved team productivity by 30%"
+exp-details-gastro-text-point-6,Architected a data migration strategy that preserved historical data while enabling new system capabilities without service interruption.
+exp-details-gastro-text-point-7,"Managed stakeholder expectations through regular demos and progress updates, ensuring alignment between client vision and delivered product."
+exp-details-gastro-techstack,Technology Stack
+exp-details-gastro-techstack-point-1,"Go, NextJS, NestJS, Azure Cloud, GCP workflows, Prisma ORM, Node.js, Typescript, Javascript, React, REST API, OAuth2, OWASP, Redis, PostgreSQL, PGAdmin, Elixir, Phoenix, CI/CD, Linux, Curl, Nu-shell, Bash, Scripting GitHub, Linux, DevOps"
+exp-details-gastro-techstack-point-2,"GitHub, Azure CI-CD, Azure-PostgresSQL, Azure-Redis, SCRUM, Agile Methodologies, DevOps, Docker"
+exp-details-cnc-title,Entrepreneur | Product Developer & IoT Solution Engineer 
+exp-cnc-place-duration,"Freelance | Bengaluru, India | June 2024 - Nov 2024"
+exp-details-cnc-clients,Techkunstler
+exp-details-cnc-text,"Conceptualized and developed an innovative IoT cloud-connected CNC manufacturing solution from concept to MVP in 4 months, creating a complete product ecosystem including hardware (3-axis portable CNC machine), SaaS platform, and subscription business model that reduced manufacturing costs."
+exp-details-cnc-text-point-1,Executed market research analyzing competitor offerings and price points to define product positioning in underserved CNC manufacturing segments.
+exp-details-cnc-text-point-2,Gathered requirements directly from customers and created a comprehensive product roadmap.
+exp-details-cnc-text-point-3,Developed product roadmap with clear MVP milestones for both hardware and software components.
+exp-details-cnc-text-point-4,Architected complete product lifecycle development from ideation through development to commercial launch.
+exp-details-cnc-text-point-5,Established pricing strategy and subscription model aligned with market expectations.
+exp-details-cnc-text-point-6,"Built a complete SaaS platform with payment integration using Microsoft Azure, enabling a subscription-based revenue model"
+exp-details-cnc-techstack,Technology Stack
+exp-details-cnc-techstack-point-1,"C++, STM32, ESP32, BLE Low energy, Motor drivers, FluidNC, Gdb, llvm, Debugging, TDD, Bash, Yaml, grbl, G-Code, AutoCAD, AutoCAD-API, VB-Scripting, Linux, ESP-Now, UART, Hardware Debugging, STLINK JTAG, Core dump analysis"
+exp-details-cnc-techstack-point-2,"Web: Go-lang, Python, Azure Cloud, IoT, Grafana, Node.js, React, REST API, OAuth2, PostgreSQL, RazorPay API, OpenAPI, CI/CD, GitHub, Linux, DevOps, Docker"
+exp-details-ai-auto-text,Delivered complete AI automation solutions using n8n. Integrated the AI automation into the existing websites and workflows. 
+exp-details-ai-auto-text-point-1,Integrate the AI into the existing websites and automate the sales funnel.
+exp-details-ai-auto-text-point-2,Executed comprehensive workflow automation using n8n.
+exp-details-ai-auto-text-point-3,Create a sales funnel using a cold email approach. and provide dynamic notifications about the potential customers to the sales teams in Slack channels.
+exp-details-ai-auto-text-point-4,Build custom RAG systems to answer customer queries in the form of AI chatbots.
+exp-details-ai-auto-text-point-5,Create follow-up workflows and tracking mechanisms to enhance the sales ROI.
+exp-details-ai-auto-text-point-6,Conduct market research on the best available models to address the specific problem and advise clients on better and more cost-effective alternatives.
+exp-details-ai-auto-text-point-7,Integrate different AI providers into the system and evaluate the performance of the models for a given task using custom KPI’s.
+exp-details-ai-auto-techstack,Technology Stack
+exp-details-ai-auto-techstack-point-1,"RAG, MCP, Agentic AI, n8n, Vapi, OpenAI, Claude, Gemini, Ollama, Huggingfaces, Python, Langchain, Langfuse, Pydantic AI, Crawl4AI, Smolagents"
+exp-details-ai-auto-techstack-point-2,"Azure AI integrations, MLOps, DVC, Custom LLM's, Prompt Engineering."
+exp-details-ai-auto-techstack-point-3,"GitHub, Jenkins, CI-CD, Jira, , SCRUM, Agile Methodologies, DevOps, Docker"
+exp-details-adas-sme-title,ADAS Subject Matter Expert (SME).
+exp-sme-place-duration,"KPIT GmbH | Munich, Germany | Feb 2021 - May 2024"
+exp-details-sme-clients,"Clients: Qualcomm, Volvo, Polstar, BYD and Geely"
+exp-details-sme-text,"Served as “Subject Matter Expert” delivering technical architecture and product development for multiple Level 1-2 ADAS features, including Highway Pilot Assist, Adaptive Cruise Control (ACC), Lane Change Assist (LCA), Automatic Emergency Braking (AEB), and validation frameworks for Qualcomm's automotive platform. I have played multiple roles in this project as Solution Architecht, SCRUM Master and Product Owner."
+exp-details-sme-text-point-1,"Developed and maintained Highway Pilot Assist feature, enabling lane centering functionality through road geometry fusion, sensor fusion, and lateral control systems"
+exp-details-sme-text-point-2,Implemented advanced algorithms for path planning and motion planning in autonomous driving scenarios
+exp-details-sme-text-point-3,Developed state estimation models and Kalman filter implementations in C++ for sensor fusion and vehicle positioning
+exp-details-sme-text-point-4,Managed complete product lifecycle from requirement gathering through deployment and maintenance for multiple ADAS features
+exp-details-sme-text-point-5,Served as primary technical liaison between Qualcomm engineers and Chinese OEM stakeholders
+exp-details-sme-text-point-6,Directed cross-functional development teams while implementing structured Agile workflows and quality gates
+exp-details-sme-text-point-7,Created comprehensive product documentation and knowledge management systems for ADAS features.
+exp-details-sme-techstack,Technology Stack
+exp-details-sme-techstack-point-1,"C, C++, Python, MATLAB, Simulink, m-script, Bash, Linux, QNX, AURIX"
+exp-details-sme-techstack-point-2,"MISRAL, AUTOSAR, ADASIS v2, CAN, CAN-FD, OBD-2, LIN, SOME-IP, CANoe, dSPACE, FlexRay, Software Defined Vehicle (SDV), Hardware In the Loop (HIL), Model In the Loop (MIL), Software In the Loop (SIL), Vehicle Testing, TDD, gTest, Unit testing."
+exp-details-sme-techstack-point-3,"Gerrit, GitHub, Zull, Jenkins, CI-CD, Jira, Codebeamer, Confluence, Artifactory, SCRUM, Agile Methodologies, DevOps, Docker"
+exp-details-adas-aspice-title,Test Automation Lead
+exp-adas-aspice-place-duration,"KPIT GmbH | Munich, Germany | Feb 2020 - Feb 2021 "
+exp-details-aspice-clients,"Clients: Qualcomm, Volvo, Polstar, BYD and Geely"
+exp-details-aspice-text,"Lead a team of test engineers as “Test Automation Lead” for the ADAS features. Spearheaded the Test Automation for Qualcomm's automotive platform, adhering to the APSICE SYS-2, SYS-3 and SYS-5 Verfication and Validation specifications (V&V) model."
+exp-details-aspice-text-point-1,"Achived 100% Requirements coverage for the ADAS Leve-1 and Level-2 features such as ACC, Traffic Assist and Lane change assist"
+exp-details-aspice-text-point-2,Created detailed test plans and execution methodologies.
+exp-details-aspice-text-point-3,Achived 100% Test coverage using dSPACE simulations for the complex ADAS usecases.
+exp-details-aspice-text-point-4,"Authored ASPICE SYS.2, SYS.3, and SYS.5 compliant requirements verification and Validation for ADAS features"
+exp-details-aspice-text-point-5,Successfully achived EURO NCAP compliance for the features tested and validated using dSPACE.
+exp-details-aspice-text-point-6,Directed cross-functional development teams while implementing structured Agile workflows and quality gates
+exp-details-aspice-text-point-7,Created comprehensive product test documentation and knowledge management systems for ADAS features.
+exp-details-aspice-techstack,Technology Stack
+exp-details-aspice-techstack-point-1,"C++, Python, MATLAB, Simulink, m-script, Bash, Linux, QNX, AURIX"
+exp-details-aspice-techstack-point-2,"MISRAL, AUTOSAR, ADASIS v2, CAN, CAN-FD, OBD-2, LIN, SOME-IP, CANoe, dSPACE, FlexRay, Software Defined Vehicle (SDV), Hardware In the Loop (HIL), Model In the Loop (MIL), Software In the Loop (SIL), Vehicle Testing, TDD, gTest, Unit testing."
+exp-details-aspice-techstack-point-3,"Black box testing, White box testing, Field testing, System testing, Integration testing, Regression testing, E2E testing"
+exp-details-aspice-techstack-point-4,"Gerrit, GitHub, Zull, Jenkins, CI-CD, Jira, Codebeamer, Confluence, Artifactory, SCRUM, Agile Methodologies, DevOps, Docker"
+exp-details-adas-bmw-cv-title,Computer Vision Engineer
+exp-details-bmw-cv-clients,Clients: BMW and Mobileye
+exp-details-bmw-cv-text,"Architected a validation framework for BMW's autonomous drivingcamera systems, enabling objective performance measurement"
+exp-details-bmw-cv-text-point-1,Developed computer vision algorithms for lane detection and road sign recognition validation using OpenCV libraries.
+exp-details-bmw-cv-text-point-2,Created visualization tools and dashboards for camera system performance analysis and defect identification
+exp-details-bmw-cv-text-point-3,Established quantifiable KPIs to measure camera system performance and vendor accountability objectively.
+exp-details-bmw-cv-text-point-4,Served as the primary technical interface between BMW vision specialists and development teams
+exp-details-bmw-cv-text-point-5,Managed product backlog prioritization and sprint planning for the timely delivery of validation features.
+exp-details-bmw-cv-text-point-6,Guided third-party data annotation vendors to improve ground truth data quality through detailed specifications.
+exp-details-bmw-cv-techstack,Technology Stack
+exp-details-bmw-cv-techstack-point-1,"C++, OpenCV, OpenGL, Python, Bash, Linux"
+exp-details-bmw-cv-techstack-point-2,"CMake, Bazel, TDD, gTest, Mocks, GDB, CoreDump Analysis, AUTOSAR, Image Processing algorithms, Computer Vision, Ground truth data annotation, Machine Learning."
+exp-details-bmw-cv-techstack-point-3,"GitHub, CI-CD, Jira, Confluence, Artifactory, Large Scale SCRUM, Agile Methodologies, DevOps, Docker"
+exp-details-anova-title,Network and ML Engineer
+exp-details-anova-clients,"Clients: British Telecom, AT&T, and Bharathi Airtel"
+exp-details-anova-text,"Architected and developed an innovative network monitoring platform from the ground up, transforming telecom infrastructure performance insights through machine learning analytics and real-time network diagnostics for major telecom operators such as British Telecom, AT&T, and Bharthi Airtel."
+exp-details-anova-text-point-1,Architected a core analytics engine using C++/DPDK.
+exp-details-anova-text-point-2,Developed machine learning (ML) models using Python and scikit-learn for network anomaly identification and failure prediction
+exp-details-anova-text-point-3,"Designed and implemented network KPIs quantifying Quality of Service, signal integrity, and critical telecom metrics"
+exp-details-anova-text-point-4,"Built visualization dashboards, transforming complex network data into actionable insights for operations teams"
+exp-details-anova-text-point-5,Created deployment automation tools streamlining product updates across client data centers
+exp-details-anova-text-point-6,Mentored engineering teams on telecom protocols and machine learning implementation best practices
+exp-details-anova-techstack,Technology Stack
+exp-details-anova-techstack-point-1,"C++, Python, DPDK, LLVM, Pandas, Scikit-learn, Matplotlib, Bash, Linux, Perl"
+exp-details-anova-techstack-point-2,"Zookeeper, Kafka, Cassandra, DevOps, Docker, Kubernetes."
+exp-details-anova-techstack-point-3,"ClearCase, Jenkins, CI-CD, Jira, Grafana, Machine Learning, SCRUM, Agile Methodologies, DevOps, Docker"
+exp-details-moto-title,Senior Software Engineer
+exp-details-moto-clients,Clients: Verizon and Commcast
+exp-details-moto-text,Designed and developed a Digital Rights Management (DRM) system meeting ISO-27001 security requirements.
+exp-details-moto-text-point-1,"Developed a video recording and storage management system, introducing pause-and-play functionality for enhanced user experience."
+exp-details-moto-text-point-2,"Designed Software-Defined Networking features for next-generation cable modems, enabling advanced parental controls and bandwidth management"
+exp-details-moto-text-point-3,"Implemented bandwidth throttling capabilities, enabling prioritization of critical applications during network congestion"
+exp-details-moto-text-point-4,Optimized media storage management across limited hardware resources for eﬃcient content handling
+exp-details-moto-techstack,Technology Stack
+exp-details-moto-techstack-point-1,"C++, Python, RDK-V, RDK-B, LLVM, Pandas, Scikit-learn, Matplotlib, Bash, Javascript, Linux, Perl"
+exp-details-moto-techstack-point-2,"Svn, Jenkins, CI-CD, Make, CMake, Yocto, SCRUM, Agile Methodologies"
+exp-details-mt-title,Senior Software Engineer
+exp-details-mt-clients,Clients: DistTV
+exp-details-mt-text,"Led implementation of Conax Conditional Access System for DishTV's set-top box platform, delivering critical security components that protected premium content and enabled subscription-based business model through rigorous certification process."
+exp-details-mt-text-point-1,Designed and developed a conditional access system securing content delivery while ensuring a seamless viewing experience
+exp-details-mt-text-point-2,"Implemented smart card integration, authenticating legitimate subscribers while preventing unauthorized access"
+exp-details-mt-text-point-3,Built secure bootloaders and encryption systems protecting against hardware-based security attacks
+exp-details-mt-text-point-4,"Navigated rigorous Conax certification process, ensuring compliance with international security standards"
+exp-details-mt-techstack,Technology Stack
+exp-details-mt-techstack-point-1,"C, Bash, Linux, Embedded Systems, Conax Conditonal Access, Bootloader, Secure Boot, Smart Card"
+exp-details-mt-techstack-point-2,"Svn, Jenkins, CI-CD, Make"
+back-to-exp-link,Back to Experience
+contact-title,Contact Me
+contact-label-name,Your Name
+contact-label-email,Your Email ID
+contact-label-type,I am a...
+contact-option-recruiter,Recruiter
+contact-option-consultant,Consultant
+contact-option-firm,Firm
+contact-option-other,Other
+contact-label-message,Your Message
+contact-submit-button,Send Message
+footer-text,&copy; 2024 Your Name. All Rights Reserved.
